@@ -17,10 +17,15 @@ Connect HOME!
 
 	function showPosition(position) 
 	{
+    	$.post("/connect/start_connect", position).always(function( data ) 
+			{
+			    console.log(data.responseText)
 
-		alert(position.coords.latitude)
-		alert(position.coords.longitude)
+			    window.location.href = data.responseText;
 
+
+		    }
+		)
 	}
 
 	function showError(error) 

@@ -33,6 +33,8 @@ group :development do
   gem 'sqlite3'
 end
 
+gem 'geocoder'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
